@@ -5,7 +5,7 @@ require 'nppes_api/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "nppes_api"
-  spec.version       = NppesApi::VERSION
+  spec.version       = NPPESApi::VERSION
   spec.authors       = ["Aubrey Holland"]
   spec.email         = ["aubrey@adhocteam.us"]
 

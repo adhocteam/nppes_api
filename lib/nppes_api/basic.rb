@@ -1,4 +1,4 @@
-module NppesApi
+module NPPESApi
   class Basic
     def initialize(data)
       @data = data

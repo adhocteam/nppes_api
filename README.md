@@ -21,7 +21,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The entrypoint for searches is at NPPESApi.search. See the code in lib/nppes_api.rb for information on the options that you can pass,
+which are the same as the ones [described by NPPES](https://npiregistry.cms.hhs.gov/api/demo). A successful search will return an
+NPPESApi::SearchResults object, from which you can call methods to retrieve data or call the raw_data method to get the original JSON.
+Here is an example query:
+
+```
+NPPESApi.search(number: 1932494937).results.first.taxonomies.first.state #=> 'NC'
+```
 
 ## Development
 

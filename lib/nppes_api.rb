@@ -8,7 +8,7 @@ require_relative 'nppes_api/provider'
 require_relative 'nppes_api/search_results'
 require_relative 'nppes_api/taxonomy'
 
-module NppesApi
+module NPPESApi
   ENUMERATION_TYPES = [
     NPI_1 = 'NPI-1'.freeze,
     NPI_2 = 'NPI-2'.freeze

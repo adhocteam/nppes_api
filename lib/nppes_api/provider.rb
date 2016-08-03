@@ -1,4 +1,4 @@
-module NppesApi
+module NPPESApi
   class Provider
     def initialize(data)
       @data = data

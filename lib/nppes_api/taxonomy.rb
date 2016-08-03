@@ -1,4 +1,4 @@
-module NppesApi
+module NPPESApi
   class Taxonomy
     def initialize(data)
       @data = data

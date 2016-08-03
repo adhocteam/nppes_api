@@ -1,4 +1,4 @@
-module NppesApi
+module NPPESApi
   class Address
     def initialize(data)
       @data = data

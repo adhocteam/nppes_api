@@ -1,6 +1,6 @@
 require 'multi_json'
 
-module NppesApi
+module NPPESApi
   class SearchResults
     def initialize(raw_data)
       @data = MultiJson.load(raw_data)
