@@ -1,8 +1,7 @@
-# NppesApi
+# NPPES Api
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/nppes_api`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This is a Ruby wrapper for the [NPPES NPI Registry API](https://npiregistry.cms.hhs.gov/registry/help-api). It provides a simple
+query interface and returns data either in raw JSON format or wrapped with queryable Ruby objects.
 
 ## Installation
 
@@ -38,4 +37,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
