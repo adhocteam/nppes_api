@@ -15,7 +15,13 @@ module NPPESApi
     end
 
     def results
-      @results ||= @data['results'].map { |i| Provider.new(i) }
+      @results ||= begin
+        if @data['results'].present?
+          @data['results'].map { |i| Provider.new(i) }
+        else
+          []
+        end
+      end
     end
   end
 end
