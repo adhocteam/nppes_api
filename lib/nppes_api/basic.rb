@@ -19,7 +19,9 @@ module NPPESApi
 
     methods.each do |meth|
       define_method(meth) do
-        @data[meth.to_s]
+        if @data.present?
+          @data[meth.to_s]
+        end
       end
     end
   end
