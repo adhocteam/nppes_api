@@ -16,7 +16,7 @@ module NPPESApi
       @basic = Basic.new(@data['basic'])
     end
 
-    [:created_epoch, :last_updated_epoch, :number, :other_names, :identifiers].each do |meth|
+    [:created_epoch, :enumeration_type, :last_updated_epoch, :number, :other_names, :identifiers].each do |meth|
       define_method(meth) do
         @data[meth.to_s]
       end
