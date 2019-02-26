@@ -38,6 +38,7 @@ module NPPESApi
   # @param limit [Integer] Limit results, default = 10, max = 200
   # @param skip [Integer] Skip first N results, max = 1000
   def self.search(options = {})
+    options.merge!({address_purpose:""})
     SearchResults.new(RestClient.get('https://npiregistry.cms.hhs.gov/api', params: options).body)
   end
 end
