@@ -10,6 +10,8 @@ module NPPESApi
       :first_name,
       :last_name,
       :middle_name,
+      :name_prefix,
+      :name_suffix,
       :name,
       :gender,
       :sole_proprietor,
