@@ -37,8 +37,9 @@ module NPPESApi
   # @param country_code [String] Exactly two characters. If "US" other criteria are required
   # @param limit [Integer] Limit results, default = 10, max = 200
   # @param skip [Integer] Skip first N results, max = 1000
+  # @param version [Float] Identifies the version of the API to use (e.g., 2.0, 2.1).
   def self.search(options = {})
-    options.merge!({address_purpose:""})
+    options.merge!({address_purpose:"", version: 2.1})
     SearchResults.new(RestClient.get('https://npiregistry.cms.hhs.gov/api', params: options).body)
   end
 end
