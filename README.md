@@ -40,28 +40,30 @@ A successful `NPPESApi.search()` call will return an `NPPESApi::SearchResults` o
   - `number`
   - `other_names`
   - `identifiers`
-  - `basic`: an `NPPESApi::Basic` object, which has the following objects/methods:   
-    - `status`
-    - `credential`
+  - `basic`: an `NPPESApi::Basic` object, which has the following objects/methods:
     - `first_name`
     - `last_name`
     - `middle_name`
-    - `name`
-    - `gender`
+    - `credential`
     - `sole_proprietor`
-    - `last_updated`
+    - `gender`
     - `enumeration_date`
+    - `last_updated`
+    - `status`
+    - `name_prefix`
+    - `name_suffix`
   - `addresses`: An array of `NPPESApi::Address` objects, which have the following objects/methods:
+    - `country_code`
+    - `country_name`
+    - `address_purpose`
+    - `address_type`
     - `address_1`
     - `address_2`
     - `city`
     - `state`
     - `postal_code`
     - `telephone_number`
-    - `country_code`
-    - `country_name`
-    - `address_type`
-    - `address_purpose`
+    - `fax_number`
   - `taxonomies`: An array of `NPPESApi::Taxonomy` objects, which have the following objects/methods:
     - `state`
     - `code`

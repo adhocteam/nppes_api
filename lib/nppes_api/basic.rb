@@ -5,16 +5,17 @@ module NPPESApi
     end
 
     methods = [
-      :status,
-      :credential,
       :first_name,
       :last_name,
       :middle_name,
-      :name,
-      :gender,
+      :credential,
       :sole_proprietor,
+      :gender,
+      :enumeration_date,
       :last_updated,
-      :enumeration_date
+      :status,
+      :name_prefix,
+      :name_suffix
     ]
 
     methods.each do |meth|
@@ -24,3 +25,5 @@ module NPPESApi
     end
   end
 end
+
+

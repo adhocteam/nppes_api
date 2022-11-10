@@ -5,16 +5,17 @@ module NPPESApi
     end
 
     methods = [
+      :country_code,
+      :country_name,
+      :address_purpose,
+      :address_type,
       :address_1,
       :address_2,
       :city,
       :state,
       :postal_code,
       :telephone_number,
-      :country_code,
-      :country_name,
-      :address_type,
-      :address_purpose
+      :fax_number
     ]
 
     methods.each do |meth|
