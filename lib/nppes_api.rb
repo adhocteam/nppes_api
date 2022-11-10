@@ -38,6 +38,10 @@ module NPPESApi
   # @param limit [Integer] Limit results, default = 10, max = 200
   # @param skip [Integer] Skip first N results, max = 1000
   def self.search(options = {})
+    # Append the API version number to the options hash.
+    # Note that as of November 2022, the latest API version is 2.1, according to
+    # https://npiregistry.cms.hhs.gov/api-page
+    options[:version] = '2.1' # this version flag is required as of version 2.1
     SearchResults.new(RestClient.get('https://npiregistry.cms.hhs.gov/api', params: options).body)
   end
 end
