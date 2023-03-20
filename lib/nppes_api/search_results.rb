@@ -15,7 +15,7 @@ module NPPESApi
     end
 
     def results
-      @results ||= @data['results'].map { |i| Provider.new(i) }
+      @results ||= @data['results']&.map { |i| Provider.new(i) }
     end
   end
 end

@@ -5,16 +5,25 @@ module NPPESApi
     end
 
     methods = [
-      :status,
-      :credential,
       :first_name,
       :last_name,
       :middle_name,
-      :name,
-      :gender,
+      :credential,
       :sole_proprietor,
+      :gender,
+      :enumeration_date,
       :last_updated,
-      :enumeration_date
+      :status,
+      :name_prefix,
+      :name_suffix,
+      :authorized_official_first_name,
+      :authorized_official_last_name,
+      :authorized_official_middle_name,
+      :authorized_official_title_or_position,
+      :authorized_official_telephone_number,
+      :authorized_official_name_prefix,
+      :authorized_official_name_suffix,
+      :authorized_official_credential
     ]
 
     methods.each do |meth|
@@ -24,3 +33,5 @@ module NPPESApi
     end
   end
 end
+
+
